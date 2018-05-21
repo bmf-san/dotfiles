@@ -1,0 +1,9 @@
+{
+  "console log ": {
+    "prefix": "debug",
+    "body": [
+      "console.log('$1');",
+    ],
+    "description": "console log"
+  }
+}
