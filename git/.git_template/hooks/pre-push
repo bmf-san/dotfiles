@@ -1,0 +1,31 @@
+#!/bin/bash
+while read local_ref local_sha1 remote_ref remote_sha1
+do
+    cat << EOS
+--------------------------------------------------
+                                        
+                                        
+■■■■■                  ■           ■■■  
+■■   ■■                ■          ■■  ■ 
+■     ■                ■          ■   ■ 
+■     ■ ■    ■  ■■■■■  ■■■■■          ■ 
+■■   ■■ ■    ■  ■      ■■  ■■        ■■ 
+■■■■■■  ■    ■  ■■     ■    ■       ■   
+■       ■    ■   ■■■   ■    ■       ■   
+■       ■    ■      ■  ■    ■           
+■       ■■  ■■  ■   ■  ■    ■       ■   
+■        ■■■■■  ■■■■   ■    ■       ■   
+                                        
+Do you really want to push?
+If you want, type 'yesido'
+--------------------------------------------------
+EOS
+    exec < /dev/tty
+    read ANSWER
+
+    case $ANSWER in
+      "yesido" ) echo "OK. push start.";;
+      * ) echo "push failed.";exit 1;;
+    esac
+    exit 0
+done
