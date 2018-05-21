@@ -1,0 +1,72 @@
+{
+  "Printf for debugging": {
+    "prefix": "debug",
+    "body": [
+      "fmt.Printf(\"%#v\\n\", $1)"
+    ],
+    "description": "Printf for debugging"
+  },
+  "if condition for error handling": {
+    "prefix": "iferr",
+    "body": [
+      "if err != nil {",
+      "\t$1",
+      "}"
+    ],
+    "description": "if condition for error handling"
+  },
+  "table driven test": {
+    "prefix": "tdt",
+    "body": [
+      "cases := []struct {"
+      "\tactual     bool"
+      "\texpected   bool"
+      "\titem       string"
+      "}{"
+      "\t{"
+      "\t\tactual:     true,"
+      "\t\texpected:   false,"
+      "\t\titerm: \"foo\","
+      "\t},"
+      "\t{"
+      "\t\tactual:     true,"
+      "\t\texpected:   false,"
+      "\t\titem: \"bar\","
+      "\t},"
+      "}"
+      ""
+      "for _, c := range cases {"
+      "\t// testing and assertion"
+      "}"
+    ],
+    "description": "table driven test"
+  },
+  "test main": {
+    "prefix": "tmain",
+    "body": [
+      "func setup() {"
+      "\tprintln(\"do something\")"
+      "}"
+      ""
+      "func tearDown() {"
+      "\tprintln(\"do something\")"
+      "}"
+      ""
+      "func TestMain(m *testing.M) {"
+      "\tsetup()"
+      "\tret := m.Run()"
+      "\tif ret == 0 {"
+      "\t\tteardown()"
+      "\t}"
+      "\tos.Exit(ret)"
+      "}"
+      ""
+      "func TestFoo(t *testing.T) {"
+      "\t// setup will be called"
+      "\tprintln(\"do something\")"
+      "\t// tearDown will be called"
+      "}"
+    ],
+    "description": "test main with setup and teardown"
+  },
+}

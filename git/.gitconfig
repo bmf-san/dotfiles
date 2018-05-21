@@ -1,0 +1,28 @@
+[user]
+name = bmf-san
+email = bmf.infomation@gmail.com
+[diff]
+tool = default-difftool
+[difftool "default-difftool"]
+cmd = code --wait --diff $LOCAL $REMOTE
+[alias]
+ad = add
+cmt = commit
+psh = push
+dff = diff
+rst = reset 
+lg = log 
+rst = reset 
+rbs = rebase 
+stas = stash 
+stat = status 
+cho = checkout 
+br = branch 
+pl = pull 
+ft = fetch 
+cp = cherry-pick
+cbr = git rev-parse --abbrev-ref HEAD 
+[init]
+templatedir = ~/.git_template/
+[core]
+excludesfile = ~/.gitignore_global

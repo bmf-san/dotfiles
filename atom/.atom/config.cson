@@ -1,0 +1,273 @@
+"*":
+  "atom-beautify":
+    apex:
+      beautify_on_save: true
+    arduino:
+      beautify_on_save: true
+    bash:
+      beautify_on_save: true
+    cfml:
+      beautify_on_save: true
+    clj:
+      beautify_on_save: true
+    coffeescript:
+      beautify_on_save: true
+    cpp:
+      beautify_on_save: true
+    crystal:
+      beautify_on_save: true
+    cs:
+      beautify_on_save: true
+    css:
+      beautify_on_save: true
+    csv:
+      beautify_on_save: true
+    d:
+      beautify_on_save: true
+    ejs:
+      beautify_on_save: true
+    elm:
+      beautify_on_save: true
+    erb:
+      beautify_on_save: true
+    erlang:
+      beautify_on_save: true
+    executables:
+      php: {}
+      "php-cs-fixer":
+        path: "/usr/local/bin/php-cs-fixer"
+    fortran:
+      beautify_on_save: true
+    general:
+      _analyticsUserId: "594f4ff7-8768-4aec-ba7f-55604a085c86"
+    gherkin:
+      beautify_on_save: true
+    glsl:
+      beautify_on_save: true
+    go:
+      beautify_on_save: true
+    handlebars:
+      beautify_on_save: true
+    haskell:
+      beautify_on_save: true
+    html:
+      beautify_on_save: true
+    jade:
+      beautify_on_save: true
+    java:
+      beautify_on_save: true
+    js:
+      beautify_on_save: true
+      space_after_anon_function: true
+    json:
+      beautify_on_save: true
+    jsx:
+      beautify_on_save: true
+    latex:
+      beautify_on_save: true
+    less:
+      beautify_on_save: true
+    lua:
+      beautify_on_save: true
+    markdown: {}
+    marko:
+      beautify_on_save: true
+    mustache:
+      beautify_on_save: true
+    nunjucks:
+      beautify_on_save: true
+    objectivec:
+      beautify_on_save: true
+    ocaml:
+      beautify_on_save: true
+    pawn:
+      beautify_on_save: true
+    perl:
+      beautify_on_save: true
+    php:
+      beautify_on_save: true
+    puppet:
+      beautify_on_save: true
+    python:
+      beautify_on_save: true
+    r:
+      beautify_on_save: true
+    riot:
+      beautify_on_save: true
+    ruby:
+      beautify_on_save: true
+    rust:
+      beautify_on_save: true
+    sass:
+      beautify_on_save: true
+    scss: {}
+    spacebars:
+      beautify_on_save: true
+    sql:
+      beautify_on_save: true
+    svg:
+      beautify_on_save: true
+    swig:
+      beautify_on_save: true
+    tss:
+      beautify_on_save: true
+    twig:
+      beautify_on_save: true
+    typescript:
+      beautify_on_save: true
+    ux:
+      beautify_on_save: true
+    vala:
+      beautify_on_save: true
+    visualforce:
+      beautify_on_save: true
+    vue: {}
+    xml:
+      beautify_on_save: true
+    yaml: {}
+  "atom-clock":
+    dateFormat: "DD/MM/YYYY H:mm"
+    locale: "ja"
+  "atom-ide-ui":
+    hyperclick:
+      darwinTriggerKeys: "ctrlKey"
+    use: {}
+  "atom-material-ui":
+    colors:
+      abaseColor: "#2196f3"
+      predefinedColor: "Blue"
+    tabs:
+      stretchedTabs: true
+    treeView: {}
+    ui:
+      animations: false
+      panelContrast: true
+  "autoclose-html": {}
+  core:
+    allowPendingPaneItems: false
+    destroyEmptyPanes: false
+    disabledPackages: [
+      "notebook"
+      "hyperclick-php"
+      "php-hyperclick"
+      "atom-smart-tabs"
+      "smart-tab-name"
+      "atom-smart-tabnames"
+      "tab-rename"
+      "advanced-open-file"
+      "supercollider"
+      "todo-list"
+      "tidal-autocode"
+      "php-analyser"
+      "rest-client"
+      "language-sql-mysql"
+      "git-diff"
+      "github"
+    ]
+    followSymlinks: false
+    openEmptyEditorOnStart: false
+    packagesWithKeymapsDisabled: [
+      "terminal-plus"
+      "browser-plus"
+      "tidalcycles"
+      "platformio-ide-terminal"
+    ]
+    telemetryConsent: "no"
+    themes: [
+      "atom-material-ui"
+      "solarized-dark-syntax"
+    ]
+  editor:
+    backUpBeforeSaving: true
+    fontFamily: "Inconsolata-g"
+    fontSize: 11
+    invisibles: {}
+    lineHeight: 2
+    scrollPastEnd: true
+    scrollSensitivity: 80
+    showIndentGuide: true
+  emmet: {}
+  "exception-reporting":
+    userId: "5fb2efe5-ccb9-cf7d-8e08-7085de393172"
+  fonts:
+    fontFamily: "Average Mono"
+  "grammar-tab-colors": {}
+  "highlight-line":
+    hideHighlightOnSelect: true
+  linter: {}
+  "linter-eslint":
+    fixOnSave: true
+  "linter-phpcs":
+    executablePath: "/usr/local/bin/anyenv/envs/phpenv/shims/phpcs"
+  "linter-phpmd":
+    executablePath: "/usr/local/bin/anyenv/envs/phpenv/shims/phpmd"
+  "linter-ui-default": {}
+  minimap:
+    plugins:
+      "git-diff": false
+      "git-diffDecorationsZIndex": 0
+      "highlight-selected": true
+      "highlight-selectedDecorationsZIndex": 0
+      "minimap-autohide": true
+      "minimap-autohideDecorationsZIndex": 0
+  "php-debug":
+    PathMaps: [
+      "remotepath;localpath"
+      "/var/www/html/project;/Users/takeuchikenta/project"
+    ]
+    currentPanelMode: "bottom"
+  "platformio-ide-terminal":
+    style:
+      theme: "solarized-dark"
+  "symbols-tree-view":
+    autoHide: true
+    autoToggle: true
+  "terminal-plus":
+    style:
+      theme: "homebrew"
+  tidalcycles: {}
+  "todo-show":
+    sortAscending: false
+    sortBy: "Type"
+  "tree-view":
+    alwaysOpenExisting: true
+    autoReveal: true
+  welcome:
+    showOnStartup: false
+  whitespace:
+    ignoreWhitespaceOnCurrentLine: false
+".attribute-values.js.jsx.source":
+  editor:
+    tabLength: 4
+".blade.html.php.text":
+  editor:
+    commentEnd: " --}}"
+    commentStart: "{{-- "
+    tabLength: 4
+".coffee.jsx.source":
+  editor:
+    tabLength: 4
+".ini.source":
+  editor:
+    tabLength: 4
+".js.jsx.react.source":
+  editor:
+    tabLength: 4
+".js.jsx.source":
+  editor:
+    tabLength: 4
+".js.source.subtlegradient":
+  editor:
+    tabLength: 4
+".rester.source":
+  editor:
+    tabLength: 4
+".source.sql":
+  editor:
+    tabLength: 4
+".source.supercollider":
+  editor:
+    tabLength: 4
+".source.tidalcycles":
+  editor:
+    tabLength: 4

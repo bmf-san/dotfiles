@@ -1,0 +1,124 @@
+{
+    "breadcrumbs.enabled": true,
+
+    "editor.multiCursorModifier": "ctrlCmd",
+    "editor.formatOnPaste": true,
+    "editor.minimap.enabled": false,
+    "editor.cursorBlinking": "solid",
+    "editor.renderIndentGuides": true,
+    "editor.renderWhitespace": "boundary",
+    "editor.lineHeight": 0,
+    "editor.quickSuggestions": true,
+    "editor.renderLineHighlight": "all",
+    "editor.wordWrap": "off",
+
+    "explorer.confirmDragAndDrop": false,
+    "explorer.openEditors.visible": 0,
+    "npm.enableScriptExplorer": false,
+
+    "extensions.ignoreRecommendations": true,
+
+    "files.exclude": {
+        "**/.DS_Store": false,
+        "**/.git": false,
+        "**/.hg": false,
+        "**/.svn": false,
+        "**/CVS": false,
+    },
+    "files.associations": {
+        "*.tpl": "html",
+        "*.blade": "html"
+    },
+
+    "search.quickOpen.includeSymbols": true,
+    "search.showLineNumbers": true,
+    "search.useReplacePreview": false,
+
+    "terminal.integrated.rendererType": "dom",
+
+    "window.zoomLevel": -1,
+    "window.title": "${activeEditorMedium}${separator}${rootName}",
+    "window.openFoldersInNewWindow": "off",
+
+    "workbench.list.automaticKeyboardNavigation": true,
+    "workbench.editor.enablePreviewFromQuickOpen": false,
+    "workbench.activityBar.visible": false,
+    "workbench.statusBar.feedback.visible": false,
+    "workbench.iconTheme": "city-lights-icons-vsc-light",
+    "workbench.editor.labelFormat": "short",
+    "workbench.editor.tabSizing": "shrink",
+    "workbench.editor.openPositioning": "left",
+    "workbench.editor.enablePreview": false,
+    "workbench.startupEditor": "none",
+    "workbench.list.keyboardNavigation": "simple",
+    "workbench.list.openMode": "doubleClick",
+    "workbench.colorTheme": "City Lights",
+    "workbench.colorCustomizations": {
+        "[City Lights]": {
+            "tab.border":"#333f4a",
+            "tab.activeBackground": "#1d252c",
+        }
+    },
+
+    "zenMode.centerLayout": false,
+    "zenMode.hideStatusBar": false,
+    "zenMode.hideActivityBar": false,
+    "zenMode.hideTabs": false,
+    "zenMode.restore": true,
+
+    // go
+    "go.gopath": "/Users/bmf/localdev/godev",
+    "go.formatOnSave": true,
+    "go.vetOnSave": true,
+    "gitlens.codeLens.recentChange.enabled": false,
+    "gitlens.codeLens.authors.enabled": false,
+    "gitlens.codeLens.enabled": false,
+    "gitlens.currentLine.enabled": false,
+    "gitlens.hovers.currentLine.over": "line",
+
+    // todohightlight
+    "todohighlight.isEnable": true,
+    "todohighlight.keywords": [
+        "DEBUG:",
+        "REVIEW:",
+        "NOTE:",
+        "FIXME:",
+        "HACK:",
+        "XXX:",
+        "REVIEW:",
+        "OPTIMIZE:",
+        "CHANGED:",
+        "WARNING:",
+    ],
+
+    "vim.statusBarColorControl": false,
+    "vim.useSystemClipboard": true,
+    "vim.hlsearch": true,
+    "vim.normalModeKeyBindingsNonRecursive": [
+        {
+            "before": [
+                "u"
+            ],
+            "after": [],
+            "commands": [
+                {
+                    "command": "undo"
+                }
+            ]
+        },
+        {
+            "before": [
+                "<C-r>"
+            ],
+            "after": [],
+            "commands": [
+                {
+                    "command": "redo"
+                }
+            ]
+        }
+    ],
+
+    // atomKeymap
+    "atomKeymap.promptV3Features": true,
+}

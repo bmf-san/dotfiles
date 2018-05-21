@@ -1,0 +1,75 @@
+"*":
+  "atom-material-ui":
+    colors:
+      abaseColor: "#22a2fc"
+  "atom-package-deps":
+    ignored: [
+      "linter-ui-default"
+    ]
+  "autohide-tree-view":
+    showOn: "hover + click + touch"
+  "city-lights-ui": {}
+  core:
+    allowPendingPaneItems: false
+    automaticallyUpdate: false
+    disabledPackages: [
+      "git-diff"
+      "go-to-line"
+      "welcome"
+      "about"
+      "minimap-autohide"
+      "open-on-github"
+      "file-icons"
+      "github"
+      "background-tips"
+      "whitespace"
+    ]
+    packagesWithKeymapsDisabled: [
+      "symbols-tree-view"
+      "keybinding-resolver"
+    ]
+    themes: [
+      "city-lights-ui"
+      "city-lights-syntax"
+    ]
+  editor:
+    fontSize: 11
+    scrollPastEnd: true
+    showIndentGuide: true
+    showInvisibles: true
+  "editor-background":
+    image:
+      backgroundSize: "cover"
+      customOverlayColor: true
+      url: "/Users/s05561/Google Drive/images/sea.JPG"
+  "exception-reporting":
+    userId: "196b7d7e-dd3b-47b0-99a5-553350899026"
+  "linter-golinter": {}
+  "linter-phpcs":
+    autoExecutableSearch: false
+    executablePath: "/usr/local/bin/php-cs-fixer"
+  "linter-ui-default":
+    panelHeight: 300
+  "markdown-preview": {}
+  minimap:
+    plugins:
+      "git-diff": true
+      "git-diffDecorationsZIndex": 0
+      "highlight-selected": true
+      "highlight-selectedDecorationsZIndex": 0
+      "minimap-autohide": true
+      "minimap-autohideDecorationsZIndex": 0
+  "symbols-tree-view":
+    scrollAnimation: false
+  "symbols-view":
+    quickJumpToFileSymbol: false
+  "tree-view": {}
+  whitespace:
+    ensureSingleTrailingNewline: false
+    ignoreWhitespaceOnCurrentLine: false
+    keepMarkdownLineBreakWhitespace: false
+    removeTrailingWhitespace: false
+".blade.html.php.text":
+  editor:
+    commentEnd: " --}}"
+    commentStart: "{{-- "
