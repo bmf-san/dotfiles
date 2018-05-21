@@ -1,0 +1,93 @@
+set all&
+autocmd!
+
+filetype plugin indent on
+scriptencoding UTF-8
+syntax on
+let g:netrw_liststyle = 3
+set encoding=UTF-8
+set backspace=indent,eol,start
+set list
+set listchars=tab:→\ ,trail:·,precedes:«,extends:»
+set number
+set noexpandtab
+set tabstop=2
+set shiftwidth=2
+set fenc=utf-8
+set hidden
+set showcmd
+set cursorline
+set cursorcolumn
+set virtualedit=onemore
+set visualbell t_vb=
+set showmatch
+set laststatus=2
+set wildmode=list:longest
+set ignorecase
+set smartcase
+set incsearch
+set wrapscan
+set noswapfile
+set nobackup
+set background=dark
+colorscheme solarized
+" 入力候補でEnter押下後に改行させない
+inoremap <expr><CR>  pumvisible() ? "<C-y>" : "<CR>"
+" tmuxがC-wなので重複しないように変更
+map <C-r> <C-w>
+
+" 画面分割
+nmap <C-r><C-l> :split<Return><C-w>w
+nmap <C-r><C-h> :split<Return><C-w>w
+nmap <C-r><C-j> :vsplit<Return><C-w>w
+nmap <C-r><C-k> :vsplit<Return><C-w>w
+
+" 画面移動
+nnoremap <C-r>j <C-w>j
+nnoremap <C-r>k <C-w>k
+nnoremap <C-r>l <C-w>l
+nnoremap <C-r>h <C-w>h
+
+" 画面移動 tmuxは<C-w>{, <C-w>}なのでtmuxとは対応しない
+nnoremap <C-r>mj <C-w>J
+nnoremap <C-r>mk <C-w>K
+nnoremap <C-r>ml <C-w>L
+nnoremap <C-r>mh <C-w>H
+
+" 画面サイズ変更
+" 幅を増やす
+nnoremap <C-r>L <C-w>>
+" 幅を減らす
+nnoremap <C-r>H <C-w><
+" 高さを増やす
+nnoremap <C-r>K <C-w>+
+" 高さを減らす
+nnoremap <C-r>J <C-w>-
+nnoremap j gj
+nnoremap k gk
+
+" vim-lsp
+nmap <C-]> :LspReferences<cr>
+" 定義ジャンプ
+nmap gd :LspDefinition<cr>
+nmap gt :tab split<cr>:LspDefinition<cr>
+nmap gs :sp<cr>:LspDefinition<cr>
+nmap gvs :vsp<cr>:LspDefinition<cr>
+" vscodeっぽくしたかったがやめた
+"noremap <silent> <C-]> : <C-u>:tab split<cr>:LspDefinition<CR>
+" デバッグ
+"let g:lsp_log_verbose = 1
+"let g:lsp_log_file = expand('~/vim-lsp.log')
+"
+" vimrcの自動読み込み
+augroup source-vimrc
+  autocmd!
+  autocmd BufWritePost *vimrc source $MYVIMRC | set foldmethod=marker
+
+call plug#begin()
+Plug 'prabirshrestha/vim-lsp'
+Plug 'mattn/vim-lsp-settings'
+Plug 'prabirshrestha/asyncomplete.vim'
+Plug 'prabirshrestha/asyncomplete-lsp.vim'
+Plug 'mattn/vim-gomod'
+call plug#end()
