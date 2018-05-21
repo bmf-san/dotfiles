@@ -1,0 +1,153 @@
+{
+	"terminal.integrated.profiles.osx": {
+		"arch": {
+			"path": "/usr/bin/arch",
+			"args": [
+				"-arm64",
+				"/bin/zsh"
+			]
+		}
+	},
+	"breadcrumbs.enabled": true,
+	"editor.multiCursorModifier": "ctrlCmd",
+	"editor.formatOnPaste": true,
+	"editor.minimap.enabled": false,
+	"editor.cursorBlinking": "solid",
+	"editor.renderWhitespace": "all",
+	"editor.detectIndentation": false,
+	"editor.insertSpaces": false,
+	"editor.lineHeight": 0,
+	"editor.quickSuggestions": {
+		"comments": "on",
+		"strings": "on",
+		"other": "on"
+	},
+	"editor.renderLineHighlight": "all",
+	"editor.wordWrap": "off",
+	"explorer.confirmDragAndDrop": false,
+	"explorer.openEditors.visible": 0,
+	"npm.enableScriptExplorer": false,
+	"extensions.ignoreRecommendations": true,
+	"files.trimTrailingWhitespace": true,
+	"files.insertFinalNewline": false,
+	"files.exclude": {
+		"**/.DS_Store": false,
+		"**/.git": false,
+		"**/.hg": false,
+		"**/.svn": false,
+		"**/CVS": false
+	},
+	"files.associations": {
+		"*.tpl": "html",
+		"*.blade": "html"
+	},
+	"search.quickOpen.includeSymbols": true,
+	"search.showLineNumbers": true,
+	"search.useReplacePreview": false,
+	"terminal.integrated.rendererType": "dom",
+	"window.title": "${activeEditorMedium}${separator}${rootName}",
+	"window.openFoldersInNewWindow": "off",
+	"workbench.list.automaticKeyboardNavigation": true,
+	"workbench.editor.enablePreviewFromQuickOpen": false,
+	"workbench.statusBar.feedback.visible": false,
+	"workbench.editor.labelFormat": "short",
+	"workbench.editor.tabSizing": "shrink",
+	"workbench.editor.openPositioning": "left",
+	"workbench.editor.enablePreview": false,
+	"workbench.startupEditor": "none",
+	"workbench.list.keyboardNavigation": "simple",
+	"workbench.list.openMode": "doubleClick",
+	"zenMode.centerLayout": false,
+	"zenMode.hideStatusBar": false,
+	"zenMode.hideActivityBar": false,
+	"zenMode.restore": true,
+	"go.installDependenciesWhenBuilding": false,
+	"go.useLanguageServer": true,
+	"gopls": {
+		"experimentalWorkspaceModule": true
+	},
+	"gitlens.codeLens.recentChange.enabled": false,
+	"gitlens.codeLens.authors.enabled": false,
+	"gitlens.codeLens.enabled": false,
+	"gitlens.currentLine.enabled": false,
+	"gitlens.hovers.currentLine.over": "line",
+	"todohighlight.isEnable": true,
+	"todohighlight.keywords": [
+		"DEBUG:",
+		"REVIEW:",
+		"NOTE:",
+		"FIXME:",
+		"HACK:",
+		"XXX:",
+		"REVIEW:",
+		"OPTIMIZE:",
+		"CHANGED:",
+		"WARNING:"
+	],
+	"vim.statusBarColorControl": false,
+	"vim.useSystemClipboard": true,
+	"vim.hlsearch": true,
+	"vim.normalModeKeyBindingsNonRecursive": [
+		{
+			"before": [
+				"u"
+			],
+			"after": [],
+			"commands": [
+				{
+					"command": "undo"
+				}
+			]
+		},
+		{
+			"before": [
+				"<C-r>"
+			],
+			"after": [],
+			"commands": [
+				{
+					"command": "redo"
+				}
+			]
+		}
+	],
+	"C_Cpp.updateChannel": "Insiders",
+	"[vue]": {
+		"editor.defaultFormatter": "esbenp.prettier-vscode"
+	},
+	"[typescript]": {
+		"editor.defaultFormatter": "esbenp.prettier-vscode"
+	},
+	"go.languageServerFlags": [],
+	"go.toolsManagement.autoUpdate": true,
+	"go.testFlags": [
+		"-v"
+	],
+	"gitlens.advanced.messages": {
+		"suppressGitMissingWarning": true
+	},
+	"editor.guides.indentation": true,
+	"gitlens.mode.active": "review",
+	"workbench.colorTheme": "Solarized Dark",
+	"workbench.colorCustomizations": {
+		// adjust colors when vim is opened in terminal
+		"terminal.ansiBrightBlack": "#073642"
+	},
+	"[makefile]": {
+		"editor.insertSpaces": false,
+		"editor.detectIndentation": false
+	},
+	"[jsonc]": {
+		"editor.defaultFormatter": "vscode.json-language-features"
+	},
+	"editor.inlineSuggest.enabled": true,
+	"github.copilot.enable": {
+		"*": true,
+		"plaintext": false,
+		"markdown": true,
+		"scminput": false
+	},
+	"workbench.activityBar.location": "hidden",
+	"githubPullRequests.pullBranch": "never",
+	"window.zoomLevel": 1,
+}

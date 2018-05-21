@@ -1,0 +1,28 @@
+{
+    "var_dump to show full data": {
+        "prefix": "debug",
+        "body": [
+          "ini_set('xdebug.var_display_max_children', -1);"
+          "ini_set('xdebug.var_display_max_data', -1);"
+          "ini_set('xdebug.var_display_max_depth', -1);"
+          "var_dump('$1');"
+          "exit;"
+        ],
+        "description": "var dump to show full data"
+    },
+    "benchmark": {
+        "prefix": "benchmark",
+        "body": [
+        "\\$start_date  = microtime(true);"
+        "echo \"Start[Memory Usage]：\" . memory_get_usage() / (1024 * 1024) . \"MB\\n\";"
+        "echo \"Start[Memory Peak Usage]：\". memory_get_peak_usage() / 1024 .\"KB\\n\";"
+        "// Write your code from here..."
+        "echo \"Finish[Memory Usage]：\" . memory_get_usage() / (1024 * 1024) . \"MB\\n\";"
+        "echo \"Finish[Memory Peak Usage]：\". memory_get_peak_usage() / 1024 .\"KB\\n\";"
+        "\\$end_date = microtime(true);"
+        "echo \"[Elapsed Time]：\" . (\\$end_date - \\$start_date) . \"秒\\n\";"
+        ],
+        "measure memory and time"
+    }
+}
+
