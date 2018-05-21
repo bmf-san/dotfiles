@@ -1,0 +1,77 @@
+'body':
+  'ctrl-y': 'unset!'
+  'cmd-k down': 'unset!'
+  'cmd-k left': 'unset!'
+  'cmd-k right': 'unset!'
+  'cmd-k up': 'unset!'
+  'cmd-{': 'unset!'
+  'cmd-}': 'unset!'
+  'ctrl-w ctrl-j': 'pane:split-down-and-copy-active-item'
+  'ctrl-w ctrl-h': 'pane:split-left-and-copy-active-item'
+  'ctrl-w ctrl-l': 'pane:split-right-and-copy-active-item'
+  'ctrl-w ctrl-k': 'pane:split-up-and-copy-active-item'
+  'ctrl-h': 'pane:show-previous-item'
+  'ctrl-l': 'pane:show-next-item'
+  'escape': 'unset!'
+  'ctrl-[': 'core:cancel'
+  'cmd-q' : 'unset!'
+
+'atom-text-editor':
+  'ctrl-t': 'unset!'
+  'ctrl-k': 'unset!'
+  'ctrl-k t down': 'unset!'
+  'ctrl-k t left': 'unset!'
+  'ctrl-k ctrl-0': 'unset!'
+  'ctrl-k ctrl-1': 'unset!'
+  'ctrl-k ctrl-2': 'unset!'
+  'ctrl-k ctrl-3': 'unset!'
+  'ctrl-k ctrl-4': 'unset!'
+  'ctrl-k ctrl-5': 'unset!'
+  'ctrl-k ctrl-6': 'unset!'
+  'ctrl-k ctrl-7': 'unset!'
+  'ctrl-k ctrl-8': 'unset!'
+  'ctrl-k ctrl-9': 'unset!'
+  'ctrl-k ctrl-alt-w': 'unset!'
+  'ctrl-k ctrl-b': 'unset!'
+  'ctrl-k ctrl-d': 'unset!'
+  'ctrl-k ctrl-down': 'unset!'
+  'ctrl-k ctrl-k': 'unset!'
+  'ctrl-k ctrl-l': 'unset!'
+  'ctrl-k ctrl-left': 'unset!'
+  'ctrl-k ctrl-n': 'unset!'
+  'ctrl-k ctrl-p': 'unset!'
+  'ctrl-k ctrl-right': 'unset!'
+  'ctrl-k ctrl-u': 'unset!'
+  'ctrl-k ctrl-up': 'unset!'
+  'ctrl-k ctrl-w': 'unset!'
+  'ctrl-k down': 'unset!'
+  'ctrl-k h': 'unset!'
+  'ctrl-k k': 'unset!'
+  'ctrl-k l': 'unset!'
+  'ctrl-k left': 'unset!'
+  'ctrl-k right': 'unset!'
+  'ctrl-k j': 'unset!'
+  'ctrl-k up': 'unset!'
+  'cmd-d': 'unset!'
+  'cmd-l': 'unset!'
+
+'atom-text-editor:not([mini])':
+  'ctrl-e': 'unset!'
+  'ctrl-e ,': 'emmet:expand-abbreviation'
+
+'atom-text-editor.vim-mode-plus:not(.insert-mode)':
+  'ctrl-w ctrl-h': 'unset!'
+  'ctrl-w ctrl-l': 'unset!'
+  'ctrl-w ctrl-j': 'unset!'
+  'ctrl-w ctrl-k': 'unset!'
+
+'.platform-darwin atom-workspace':
+  'ctrl-l': 'unset!'
+
+# goto-definition
+'.platform-darwin atom-text-editor':
+  'ctrl-enter': 'goto-definition:go'
+    
+# symbols-tree-view
+'atom-workspace':
+  'alt-cmd-\\': 'symbols-tree-view:toggle'

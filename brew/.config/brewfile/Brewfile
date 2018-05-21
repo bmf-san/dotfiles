@@ -1,0 +1,102 @@
+
+# tap repositories and their packages
+
+tap homebrew/core
+brew autoconf
+brew automake
+brew bash
+brew bash-completion
+brew berkeley-db
+brew bison
+brew bison@2.7
+brew cabal-install
+brew circleci
+brew flac
+brew fontconfig
+brew freetype
+brew gcc
+brew gd
+brew gdbm
+brew gettext
+brew ghc
+brew glib
+brew gmp
+brew graphviz
+brew gts
+brew highlight
+brew icu4c
+brew isl
+brew jack
+brew jasper
+brew jpeg
+brew jq
+brew libev
+brew libevent
+brew libffi
+brew libiconv
+brew liblo
+brew libmpc
+brew libogg
+brew libpng
+brew libressl
+brew libsamplerate
+brew libsndfile
+brew libtiff
+brew libtool
+brew libvorbis
+brew libxml2
+brew libyaml
+brew libzip
+brew lua
+brew mas
+brew mcrypt
+brew mhash
+brew mpfr
+brew ncurses
+brew netpbm
+brew oniguruma
+brew openssl
+brew pcre
+brew perl
+brew pkg-config
+brew python
+brew python@2
+brew re2c
+brew readline
+brew reattach-to-user-namespace
+brew ruby
+brew ruby-build
+brew sqlite
+brew tmux
+brew tree
+brew vim
+brew webp
+brew weighttp
+brew xz
+brew zlib
+
+tap homebrew/bundle
+
+tap homebrew/cask
+
+tap argon/mas
+
+tap kadaan/php
+
+tap rcmdnk/file
+brew brew-file
+
+# App Store applications
+appstore 973134470 Be Focused (1.7.5)
+appstore 1451177988 Carbonize (1.2.6)
+appstore 595191960 CopyClip (1.9.2)
+appstore 947393436 Drive (1.16)
+appstore 682658836 GarageBand (10.3.2)
+appstore 408981434 iMovie (10.1.12)
+appstore 1025822138 iStatistica (4.5.1)
+appstore 409183694 Keynote (9.1)
+appstore 539883307 LINE (5.18.3)
+appstore 409203825 Numbers (6.1)
+appstore 409201541 Pages (8.1)
+appstore 1176895641 Spark (2.3.9)
+appstore 497799835 Xcode (10.1)

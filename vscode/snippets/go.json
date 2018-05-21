@@ -1,0 +1,18 @@
+{
+  "Printf for debugging": {
+    "prefix": "debug",
+    "body": [
+      "fmt.Printf(\"%#v\\n\", $1)"
+    ],
+    "description": "Printf for debugging"
+  },
+  "if condition for error handling": {
+    "prefix": "iferr",
+    "body": [
+      "if err != nil {",
+      "\t$1",
+      "}"
+    ],
+    "description": "if condition for error handling"
+  }
+}
