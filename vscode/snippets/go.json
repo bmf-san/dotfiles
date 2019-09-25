@@ -14,5 +14,31 @@
       "}"
     ],
     "description": "if condition for error handling"
+  },
+  "table driven test": {
+    "prefix": "tdt",
+    "body": [
+      "cases := []struct {"
+      "\tactual     bool"
+      "\texpected   bool"
+      "\titem       string"
+      "}{"
+      "\t{"
+      "\t\tactual:     true,"
+      "\t\texpected:   false,"
+      "\t\titerm: \"foo\","
+      "\t},"
+      "\t{"
+      "\t\tactual:     true,"
+      "\t\texpected:   false,"
+      "\t\titem: \"bar\","
+      "\t},"
+      "}"
+
+      "for _, c := range cases {"
+      "\t// testing and assertion"
+      "}"
+    ],
+    "description": "table driven test"
   }
 }
