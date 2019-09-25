@@ -90,12 +90,41 @@ alias d-c='docker-compose'
 alias d-rm-a='docker rm $(d ps -a -q)'
 alias d-rmi-a='docker rmi $(d images -q)'
 alias d-c-down-a='docker-compose down --rmi all -v'
+alias d-v-rm-a='docker volume rm $(docker volume ls -qf dangling=true)'
 
 ###########################
 # tmux
 ###########################
 
 alias t='tmux'
+
+function multiSsh()
+{
+  DIR_TMUX=/usr/local/bin/tmux
+  
+  ${DIR_TMUX} new-window "exec ssh $1"
+  shift
+
+  for host in "$@"; do
+    ${DIR_TMUX} split-window "exec ssh $host"
+  done
+}
+alias mssh=multiSsh
+
+function multiSshWithSync()
+{
+  DIR_TMUX=/usr/local/bin/tmux
+  
+  ${DIR_TMUX} new-window "exec ssh $1"
+  shift
+  
+  for host in "$@"; do
+    ${DIR_TMUX} split-window "exec ssh $host"
+  done
+
+  ${DIR_TMUX} set-window-option synchronize-panes on
+}
+alias mssh-sync=multiSshWithSync
 
 ###########################
 # git
