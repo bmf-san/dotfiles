@@ -87,10 +87,7 @@ alias v-provision='vagrant provision'
 
 alias d='docker'
 alias d-c='docker-compose'
-alias d-rm-a='docker rm $(d ps -a -q)'
-alias d-rmi-a='docker rmi $(d images -q)'
-alias d-c-down-a='docker-compose down --rmi all -v'
-alias d-v-rm-a='docker volume rm $(docker volume ls -qf dangling=true)'
+alias d-sys-p='docker system prune'
 
 ###########################
 # tmux
