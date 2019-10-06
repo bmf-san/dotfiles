@@ -24,6 +24,12 @@ alias rm='rm -i'
 alias cp='cp -i'
 alias mv='mv -i'
 
+# Useful maintenance commands
+alias reboot='sudo shutdown -r now'
+alias restart='sudo shutdown -r now'
+alias update='sudo apt-get update'
+alias upgrade='sudo apt-get upgrade'
+
 # Remove .DS_Store files
 alias rm-dsstore='find . -name ".DS_Store" -print -exec rm {} ";"'
 
