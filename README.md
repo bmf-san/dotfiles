@@ -24,7 +24,7 @@ Copy and paste from `vimium/custom_key_mappings.txt`
 ## iterm2
 ### Save a preferences settings to directory
 Preferences > General > Load prefences from a custom folder or URL 
-                      > Save changes to folder when iTerms2 quits  Save Current Settings to Folde
+                      > Save changes to folder when iTerms2 quits  Save Current Settings to Folder.
 
 ### Use a preferences settings 
 Copy a preferences setting file to ~/Library/Preferences/com.googlecode.iterm2.plist
